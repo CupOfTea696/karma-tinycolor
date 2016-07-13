@@ -5,8 +5,8 @@ var pattern = function(file) {
 };
 
 var framework = function(files) {
-	files.unshift(pattern(path.resolve(require.resolve("quixote"), "../quixote.js")));
+	files.unshift(pattern(path.resolve(path.dirname(require.resolve("tinycolor2")), "tinycolor.js")));
 };
 
 framework.$inject = ["config.files"];
-module.exports = {"framework:quixote": ["factory", framework]};
+module.exports = {"framework:tinycolor": ["factory", framework]};
