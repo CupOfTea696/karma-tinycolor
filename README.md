@@ -1,7 +1,7 @@
-karma-quixote
+karma-tinycolor
 =============
 
-[Quixote](https://github.com/jamesshore/quixote) for [Karma](http://karma-runner.github.io)
+[TinyColor](https://github.com/bgrins/TinyColor) for [Karma](http://karma-runner.github.io)
 
 Installation
 ------------
@@ -9,12 +9,12 @@ Installation
 Install the plugin from npm:
 
 ```sh
-$ npm install karma-quixote --save-dev
+$ npm install karma-tinycolor --save-dev
 ```
 Or from Github:
 
 ```sh
-$ npm install 'git+https://github.com/woldie/karma-quixote.git' --save-dev
+$ npm install 'git+https://github.com/CupOfTea696/karma-tinycolor.git' --save-dev
 ```
 
 Instructions on how to install karma can be found [here](http://karma-runner.github.io/0.13/intro/installation.html)
@@ -23,16 +23,14 @@ Instructions on how to install karma can be found [here](http://karma-runner.git
 
 In your Karma configuration:
 
-* add `require('karma-quixote')` to the plugins list, and
-* add `quixote` to the `frameworks` key
+* add `require('karma-tinycolor')` to the plugins list, and
+* add `tinycolor` to the `frameworks` key
 
 ```js
 // karma.conf.js
 module.exports = function(config) {
   config.set({
-    plugins: [ require('karma-quixote'), ... ],
-  
-    frameworks: ['quixote', ... ],
+    frameworks: ['tinycolor', ... ],
     
         .
         .
@@ -44,9 +42,7 @@ module.exports = function(config) {
 Usage
 -----
 
-This karma plugin simply loads and installs the global `quixote` namespace object.  It is your responsibility
-to initialize a QFrame for Karma to add to its DOM and then make quixote assertions in your tests as described 
-on the [Quixote](https://github.com/jamesshore/quixote) page
+This karma plugin simply loads and installs the global `tinycolor` namespace object.
 
 License
 -------
